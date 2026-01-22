@@ -7,29 +7,26 @@ export type MessageWithMetadata = AIMessage & {
   createdAt: string
 }
 
+export const addMetadata = (message: AIMessage): MessageWithMetadata => ({
+  ...message,
+  id: uuidv4(),
+  createdAt: new Date().toISOString(),
+})
+
+export const removeMetadata = (message: MessageWithMetadata): AIMessage => {
+  const { id, createdAt, ...messageWithoutMetadata } = message
+  return messageWithoutMetadata
+}
+
 type Data = {
   messages: MessageWithMetadata[]
 }
 
-export const addMetadata = (message: AIMessage) => {
-  return {
-    ...message,
-    id: uuidv4(),
-    createdAt: new Date().toISOString(),
-  }
-}
-
-export const removeMetadata = (message: MessageWithMetadata) => {
-  const { id, createdAt, ...rest } = message
-  return rest
-}
-
-const defaultData: Data = {
-  messages: [],
-}
+const defaultData: Data = { messages: [] }
 
 export const getDb = async () => {
   const db = await JSONFilePreset<Data>('db.json', defaultData)
+
   return db
 }
 
