@@ -2,89 +2,109 @@
   "messages": [
     {
       "role": "user",
-      "content": "how is the weather?",
-      "id": "701f4dae-c9e4-4b38-a364-27923011820a",
-      "createdAt": "2024-11-05T20:14:23.306Z"
+      "content": "hi",
+      "id": "17bd97a5-d940-47a1-a595-8732e8c7778c",
+      "createdAt": "2026-01-24T14:41:48.890Z"
     },
     {
       "role": "assistant",
-      "content": "Could you please specify the location for which you would like to know the weather?",
+      "content": "Hello! How can I assist you today?",
       "refusal": null,
-      "id": "69bb4b06-eda2-44a4-bf31-2c82f15e282e",
-      "createdAt": "2024-11-05T20:14:24.508Z"
+      "annotations": [],
+      "id": "503ba9a2-462b-4460-99ad-79169e26b030",
+      "createdAt": "2026-01-24T14:41:49.847Z"
     },
     {
       "role": "user",
-      "content": "MN",
-      "id": "21a75a5e-335e-4344-946e-a9096adcb020",
-      "createdAt": "2024-11-05T20:15:21.482Z"
+      "content": "What is the weather today",
+      "id": "a943453a-89e6-4679-a9e5-790152d9a7ec",
+      "createdAt": "2026-01-24T14:42:14.758Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Could you please provide me with your location or the city you're interested in for the weather update?",
+      "refusal": null,
+      "annotations": [],
+      "id": "fc366319-fb52-454d-a0d3-b6084811ac1a",
+      "createdAt": "2026-01-24T14:42:16.520Z"
+    },
+    {
+      "role": "user",
+      "content": "Coimbatore",
+      "id": "b998b341-15cd-4395-a697-a998568d6b0b",
+      "createdAt": "2026-01-24T14:42:30.105Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_mdnBRU7F6Up7dyX1iboyCE87",
+          "id": "call_7fpqyrHQGlrpoma81wuxsfnp",
           "type": "function",
           "function": {
             "name": "get_weather",
-            "arguments": "{\"reasoning\":\"User requested the current weather for Minnesota.\"}"
+            "arguments": "{\"reasoning\":\"To provide the current weather information for Coimbatore.\"}"
           }
         }
       ],
       "refusal": null,
-      "id": "5526aa4e-f64d-4c96-adf4-7b975448a1bd",
-      "createdAt": "2024-11-05T20:15:22.319Z"
+      "annotations": [],
+      "id": "c4e46677-4cc1-4c23-891f-87a859e206f7",
+      "createdAt": "2026-01-24T14:42:31.285Z"
     },
     {
       "role": "tool",
       "content": "hot, 90deg",
-      "tool_call_id": "call_mdnBRU7F6Up7dyX1iboyCE87",
-      "id": "a5c81e09-6d9f-4146-bba0-b2802e34b376",
-      "createdAt": "2024-11-05T20:15:22.321Z"
-    },
-    {
-      "role": "user",
-      "content": "what was the weather again?",
-      "id": "8f197479-ca7a-4706-a17d-7077cec92bbb",
-      "createdAt": "2024-11-05T20:20:12.279Z"
+      "tool_call_id": "call_7fpqyrHQGlrpoma81wuxsfnp",
+      "id": "a92ac535-73d7-4757-9e3c-71893a13045a",
+      "createdAt": "2026-01-24T14:42:31.299Z"
     },
     {
       "role": "assistant",
-      "content": "The current weather in Minnesota is hot, with a temperature of 90 degrees.",
+      "content": "The weather in Coimbatore today is hot, with a temperature of 90°F. If you need more details or forecasts, feel free to ask!",
       "refusal": null,
-      "id": "fad8c276-ab2a-4f63-80a8-ea6e6e0c791c",
-      "createdAt": "2024-11-05T20:20:13.168Z"
+      "annotations": [],
+      "id": "5651cef0-5cf7-44a2-bd0e-f7e90fa869cc",
+      "createdAt": "2026-01-24T14:42:32.985Z"
     },
     {
       "role": "user",
-      "content": "tell me what the weater is right now though",
-      "id": "e865f51a-1d23-40f8-9790-837159c75890",
-      "createdAt": "2024-11-05T20:20:36.192Z"
+      "content": "weather right now",
+      "id": "2e9d4ad4-90fa-4916-9320-6e54e41f5266",
+      "createdAt": "2026-01-24T14:43:22.454Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_jbSaq6EgBFbWm3Xg5bUW0pN5",
+          "id": "call_DYq2EJA9Ox3naTJqpfzpiejc",
           "type": "function",
           "function": {
             "name": "get_weather",
-            "arguments": "{\"reasoning\":\"User is asking for the current weather conditions in Minnesota.\"}"
+            "arguments": "{\"reasoning\":\"To provide the current weather information for Coimbatore right now.\"}"
           }
         }
       ],
       "refusal": null,
-      "id": "9ef38aeb-7be2-4e87-aa81-f9fa046cb346",
-      "createdAt": "2024-11-05T20:20:37.040Z"
+      "annotations": [],
+      "id": "01be8e35-512f-4ec9-a828-9aa38101af57",
+      "createdAt": "2026-01-24T14:43:24.372Z"
     },
     {
       "role": "tool",
       "content": "hot, 90deg",
-      "tool_call_id": "call_jbSaq6EgBFbWm3Xg5bUW0pN5",
-      "id": "dc465b38-ddb2-4e60-bbd8-f1cca4727aa9",
-      "createdAt": "2024-11-05T20:20:37.041Z"
+      "tool_call_id": "call_DYq2EJA9Ox3naTJqpfzpiejc",
+      "id": "bb8a0a47-928e-4e90-b1a8-235ac25a78cd",
+      "createdAt": "2026-01-24T14:43:24.383Z"
+    },
+    {
+      "role": "assistant",
+      "content": "The current weather in Coimbatore is hot, with a temperature of 90°F. If you need any more information, just let me know!",
+      "refusal": null,
+      "annotations": [],
+      "id": "c9a3d313-cedc-4a66-99be-5913a2e629df",
+      "createdAt": "2026-01-24T14:43:25.493Z"
     }
   ]
 }
